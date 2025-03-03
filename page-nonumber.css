@@ -1,0 +1,8 @@
+/* where the header is normally on the top */
+@page nonumber { 
+  border: none; 
+  @top-left { content: normal; }
+  @top-right { content: normal; }
+  @top-left { content: normal; }
+  @bottom-center { content: normal; }
+}
