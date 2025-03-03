@@ -1,0 +1,16 @@
+/* for PrinceXML TOC and lists for PDF */
+/* TOC */
+.toclist {margin:0.5em 3em 0 0;}
+.toclist li {text-align:left;}
+/* TOC hanging indents */
+.level-h1 {padding-left: 1em;text-indent:-1em;font-weight:bold;}
+.level-h2 {padding-left: 3.5em;text-indent:-2em;}
+.level-h3 {padding-left: 6.5em;text-indent:-3em;}
+.figtabletoc {padding-left: 2em;text-indent:-2em;}
+
+/* page numbers content and position for PDF */
+#content li a::after { content: leader(' ') target-counter(attr(href), page);position:relative;left:3em;}
+#maps li a::after { content: leader(' ') target-counter(attr(href), page);position:relative;left:3em;}
+#tables li a::after { content: leader(' ') target-counter(attr(href), page);position:relative;left:3em;}
+#figures li a::after { content: leader(' ') target-counter(attr(href), page);position:relative;left:3em;}
+/* end TOC */
