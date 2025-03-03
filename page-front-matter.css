@@ -1,0 +1,22 @@
+/* front matter */
+@page fronttext:left { 
+  @top-left { content: counter(page, lower-roman);}
+  @top-center { content: '';}
+  @top-right { content: string(lcrunhead);}
+  @bottom-center { content: '';}
+}
+
+@page fronttext:right { 
+  @top-left { content: string(rcrunhead);}
+  @top-center { content: '';}
+  @top-right { content: counter(page, lower-roman);}
+  @bottom-center { content: '';}
+}
+
+@page fronttext:first { 
+  @top-center { content: '';}
+  @top-right { content: '';}
+  @top-left { content: '';}
+  @bottom-center { content: counter(page, lower-roman);}
+  @bottom {font-size: 90%;vertical-align: top;}
+}
