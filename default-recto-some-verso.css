@@ -1,0 +1,4 @@
+section {-prince-page-group: start;page-break-before:recto;}
+#production,
+#copyright,
+#tables {page-break-before:verso; }
